@@ -129,6 +129,49 @@ class student(person):
 x = student("Jack", 13, 2017)
 ```
 
+21. 迭代器
 
+迭代器是一种可迭代的对象，说明可以遍历所有的值，包含方法```__iter__()```和```__next__()```，为了防止迭代器永远执行下去，可以使用```raise StopInteration```
 
-​    
+22. 使用dir()函数可以列出模块中所有的函数名或变量名  
+
+23. python中的日期在datetime模块中
+
+```python
+import datetime
+
+x = datetime.datetime.now()
+print(x.year)
+```
+
+24. JSON用于存储和交换数据，需要```import json```
+
+    - 解析json，使用```json.loads()```将字符串转化为字典
+
+    - 转换为json，```json.dumps()```，为了方便结果的可读性，使用```indent```定义缩进```json.dumps(x, indent=4)```
+
+25. 正则表达式RegEx，```import re```
+
+    - 检查字符串是否以China开头和country结尾
+
+      ```python
+      import re
+      
+      txt = "China is a great contry"
+      x = re.search("^China.*country$", txt)
+      ```
+    
+26. numpy
+
+    numpy中的数组对象ndarray处速度比列表快50倍
+
+    ```python 
+    import numpy as np
+    
+    arr = np.array([1 2 3 4 5])
+    print(arr)
+    ```
+
+    
+
+  
